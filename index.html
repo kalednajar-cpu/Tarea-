@@ -1,29 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Página Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaled Najar | Portafolio</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #74ebd5, #acb6e5);
-      color: #333;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(120deg, #74ebd5, #acb6e5);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
       text-align: center;
-      margin-top: 100px;
+      padding: 30px 0;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    h1 {
-      font-size: 3em;
+
+    header h1 {
+      font-size: 2.3em;
+      letter-spacing: 1px;
     }
+
+    header nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #222;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0078ff;
+    }
+
+    main {
+      max-width: 900px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 60px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    .proyectos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .proyecto {
+      background: white;
+      border-radius: 15px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .proyecto:hover {
+      transform: translateY(-5px);
+    }
+
+    .proyecto h3 {
+      color: #0078ff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: auto;
+      background: rgba(255,255,255,0.2);
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+      font-size: 0.9em;
+    }
+
+    .redes a {
+      color: #0078ff;
+      margin: 0 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .redes a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>¡Hola, soy Kaled!</h1>
-  <p>Bienvenido a mi primera página en GitHub Pages 🚀</p>
+
+  <header>
+    <h1>👋 ¡Hola! Soy Kaled Najar</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy estudiante y entusiasta de la tecnología, apasionado por aprender sobre programación,
+        diseño web y desarrollo de proyectos digitales. Me gusta resolver problemas y crear cosas nuevas.
+      </p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyectos">
+        <div class="proyecto">
+          <h3>Proyecto 1</h3>
+          <p>Una aplicación web simple creada para aprender HTML, CSS y GitHub Pages.</p>
+        </div>
+        <div class="proyecto">
+          <h3>Proyecto 2</h3>
+          <p>Diseño de una landing page moderna y adaptable a móviles.</p>
+        </div>
+        <div class="proyecto">
+          <h3>Proyecto 3</h3>
+          <p>Pequeño experimento con animaciones y efectos visuales en CSS.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres hablar o colaborar en un proyecto?</p>
+      <p>📩 Escríbeme a <a href="mailto:tucorreo@gmail.com">tucorreo@gmail.com</a></p>
+
+      <div class="redes">
+        <a href="https://github.com/" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Kaled Najar — Creado con 💙 y GitHub Pages
+  </footer>
+
 </body>
 </html>
-<!DOCTYPE html>
 
